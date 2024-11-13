@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 h1,
@@ -39,10 +42,8 @@ ol {
 
 .content {
   display: flex;
-  overflow: hidden;
   gap: 0 30px;
   width: 1140px;
-  margin: 133px 30px;
 }
 
 .result__video-container {
@@ -104,7 +105,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 5px;
   text-decoration-thickness: 1px;
   color: #fff;
 }
@@ -179,6 +180,8 @@ li:not(:last-of-type) {
 .search-form__pseudo-checkbox {
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -191,16 +194,13 @@ li:not(:last-of-type) {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: " ";                    
-  display: flex;                 
+  content: " ";
+  position: relative;
+  display: flex;                                  
   width: 15px;                   
   height: 15px;
   background-color: #ffffff;
   border-radius: 0;
-  position: relative;
-  top: 50%;                       
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .error {
@@ -251,7 +251,7 @@ li:not(:last-of-type) {
 
 label:not(.search-form__label:has(.search-form__textfield)):hover {
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 .search-form__label:focus {
@@ -282,7 +282,7 @@ button {
 }
 
 .more-button {
-  width: 399px;
+  width: 100%;
 }
 
 button:active {
