@@ -46,11 +46,16 @@ ol {
   width: 1140px;
 }
 
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-top: 78px;
   margin-bottom: 16px;
 }
 
@@ -142,7 +147,7 @@ ol {
 
 .content__list {
   position: relative;
-  width: 399px;
+  min-width: 399px;
   height: 298px;
   overflow-x: hidden;
   padding: 2px;
@@ -159,7 +164,7 @@ li:not(:last-of-type) {
 }
 
 .content__video-card-thumbnail {
-  flex: 0 194px;
+  width: 194px;
   height: 103px;
 }
 
@@ -256,6 +261,10 @@ label:not(.search-form__label:has(.search-form__textfield)):hover {
 
 .search-form__label:focus {
   outline: none;
+}
+
+.search-form__label:has(.search-form__checkbox:focus-visible) {
+  outline: 1px solid #fff;
 }
 
 .search-form__checkbox-list  {
